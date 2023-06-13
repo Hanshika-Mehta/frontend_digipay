@@ -1,8 +1,8 @@
-import React from "react";
+   import React from "react";
 
-function RegisterHero() {
+function RegisterHero()   {
   return (
-    <div className="hero" style={{ marginTop: "80px" }}>
+    <div className="hero" >
       <h1>Experience hassle free Transaction</h1>
       <p>
         Streamline transaction with DigiPay, a seamless digital wallet.

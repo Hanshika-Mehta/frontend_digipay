@@ -2,8 +2,6 @@ import React from "react";
 import Image from "./Image";
 import LoginHero from "./LoginHero";
 import LoginForm from "./LoginForm";
-import Logo from "./Logo";
-
 
 function Login() {
   return (
@@ -11,7 +9,6 @@ function Login() {
       <Image />
       <LoginHero />
       <LoginForm />
-      <Logo />
     </>
   );
 }

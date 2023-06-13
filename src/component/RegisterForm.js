@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { useState, useEffect } from "react";
 import "./Css/Input.css"
+import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 
 function RegisterForm() {
@@ -9,6 +10,8 @@ function RegisterForm() {
 
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,9 +23,13 @@ function RegisterForm() {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
+    if (Object.keys(formErrors).length === 0) {
+      navigate("/OtpVerification"); // Redirect to OtpVerification page
+    }
   };
+
   
-  const [isChecked, setIsChecked] = useState(false);
+
 
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);

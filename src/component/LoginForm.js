@@ -1,21 +1,29 @@
+import React from "react";
 import styled from "styled-components";
-import { useState, useEffect ,useHistory} from "react";
+import { useState, useEffect} from "react";
 import "./Css/Input.css"
 import Button from "./Button";
-import { BrowserRouter, Switch } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { Route } from "react-router-dom";
 import OtpVerification from "./OtpVerification";
+import { useNavigate } from "react-router-dom";
+import Cookies from 'js-cookie'
+import AuthApi from "./AuthApi";
+
 
 
 
 
 function LoginForm() {
-  const history = useHistory();
+
+  const [auth , setAuth] = React.useState(false);
+
   const initialValues = {  phonenumber: "", password: "" };
   const [formValues, setFormValues] = useState(initialValues);
 
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,9 +35,10 @@ function LoginForm() {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
-
+    Cookies.set('Phonenumber', 'true');
+    
     if (Object.keys(formErrors).length === 0) {
-      history.push("/otp-verification");
+      navigate("/OtpVerification");
     }
   };
   
@@ -64,7 +73,7 @@ function LoginForm() {
   
 
   return (
-      <Switch>
+    <AuthApi.Provider value={{auth , setAuth}}>
     <form onSubmit={handleSubmit}>
     <MainContainer style={{height:'400px'}}>
     <WelcomeText style={{ fontSize: "36px", marginTop: "20px" }}>
@@ -100,7 +109,7 @@ function LoginForm() {
       </h3>
     </MainContainer>
     </form>
-      </Switch>
+    </AuthApi.Provider>
   );
 }
 
@@ -153,6 +162,7 @@ const MainContainer = styled.div`
     height: 80vh;
   }
 `;
+
 
 const WelcomeText = styled.h2`
   margin: 3rem 0 2rem 0;

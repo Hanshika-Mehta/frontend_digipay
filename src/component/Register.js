@@ -7,7 +7,7 @@ function Register() {
   return (
     <>
       <Image />
-      <RegisterHero />
+      <RegisterHero style={{ marginTop: '140px'}}/>
       <RegisterForm />
     </>
   );

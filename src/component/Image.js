@@ -14,10 +14,13 @@ const ImageContainer = styled.div`
   position: absolute;
   top: 40px;
   left: 50px;
+  padding: 30px;
+  
 `;
 const LogoImage = styled.img`
   width: 200px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
+
 `;
 
 export default Image;
