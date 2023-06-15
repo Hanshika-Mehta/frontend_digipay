@@ -38,7 +38,7 @@ function LoginForm() {
     Cookies.set('Phonenumber', 'true');
     
     if (Object.keys(formErrors).length === 0) {
-      navigate("/OtpVerification");
+      navigate("/Dashboard");
     }
   };
   

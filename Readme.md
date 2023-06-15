@@ -1,56 +1,70 @@
-export 'routes' (imported as 'routes') was not found in 'react-router-dom' (possible exports: browserrouter, hashrouter, link, memoryrouter, navlink, prompt, redirect, route, router, static route, switch, generate path, match path, usehistory, uselocation, useparams, useroutematch, withrouter)
+# Getting Started with Create React App
 
-solution
-For the first question, it seems like there may have been an issue with the development server that was resolved by stopping and restarting it. However, the initial issue was related to an attempted import of Route from react-router-dom resulting in an error "Attempted import error: 'Route' is not exported from 'react-router-dom'".
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Based on the provided code snippets and package.json, it seems like react-router-dom is correctly installed as a dependency. The issue may be related to importing Route incorrectly.
+## Available Scripts
 
-Instead of importing Route as:
+In the project directory, you can run:
 
-import { BrowserRouter, Route } from 'react-router-dom'
+### `npm start`
 
-Try importing it as:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-import { Route } from 'react-router-dom'
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-This should resolve the attempted import error.
+### `npm test`
 
-As for the second question, the issue seems to be related to using Routes instead of Switch and Route. Try changing this code snippet:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-import { Switch, Route, Routes } from "react-router-dom";
+### `npm run build`
 
-function Pages() {
-  return (
-    &lt;Routes&gt;
-      &lt;Switch&gt;
-        &lt;Route path="/" element={&lt;App /&gt;} /&gt;
-        &lt;Route path="*" element={&lt;Whoops404 /&gt;} /&gt;
-      &lt;/Switch&gt;
-    &lt;/Routes&gt;
-  );
-}
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-ReactDOM.render(
-  &lt;React.StrictMode&gt;
-    &lt;Router&gt;
-      &lt;Pages /&gt;
-    &lt;/Router&gt;
-  &lt;/React.StrictMode&gt;,
-  document.getElementById("root")
-);
-To:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-import { Switch, Route } from "react-router-dom";
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-ReactDOM.render(
-  &lt;React.StrictMode&gt;
-    &lt;Router&gt;
-      &lt;Switch&gt;
-        &lt;Route exact path="/" component={App} /&gt;
-        &lt;Route path="*" component={Whoops404} /&gt;
-      &lt;/Switch&gt;
-    &lt;/Router&gt;
-  &lt;/React.StrictMode&gt;,
-  document.getElementById("root")
-);
-This should resolve the error message: "export 'routes' (imported as 'routes') was not found in 'react-router-dom' (possible exports: browserrouter, hashrouter, link, memoryrouter, navlink, prompt, redirect, route, router, static route, switch, generate
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

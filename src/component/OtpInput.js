@@ -3,9 +3,13 @@ import styled from "styled-components";
 import { useState, useEffect } from "react";
 import "./Css/main.css"
 import { useNavigate } from "react-router-dom";
-import Button from "./Button";
 import { useMemo } from 'react';
 import { RE_DIGIT } from './Constants';
+import {  Modal } from 'antd';
+import Button from "./Button";
+import './Css/Input.css';
+import Input from "./Input";
+
 
 var target;
 
@@ -44,6 +48,18 @@ function OtpInput({ value, valueLength, onChange }) {
 
   const { items, inputOnChange } = valueItems;
 
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <>
       <MainContainer>
@@ -65,12 +81,35 @@ function OtpInput({ value, valueLength, onChange }) {
             />
           ))}
         </div>
-        <ButtonContainer style={{marginTop:'50px'}}>
+        <ButtonContainer style={{marginTop:'50px'}} onClick={showModal} >
         <Button type="submit" content="Verify" />
       </ButtonContainer>
       <ButtonContainer style={{marginTop:'10px '}}>
       <Button type="submit" content="Resend OTP" />
     </ButtonContainer>
+    <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+        <h2>Set Pin 1</h2>
+        <br />
+        <Input />
+        <br />
+        <br />
+        <h2>Set Pin 2</h2>
+        <div className="col-md-3">
+        <button><img src={"./img/google.png"}  style={{width:'35px' , height:'35px'}}/></button>
+        <button><img src={"./img/google.png"}  style={{width:'35px' , height:'35px'}}/></button>
+        <button><img src={"./img/google.png"}  style={{width:'35px' , height:'35px'}}/></button>
+        </div>
+        <div className="col-md-3">
+        <button><img src={"../"} style={{width:'35px' , height:'35px'}}/></button>
+        <button><img src={"./img/google.png"} style={{width:'35px' , height:'35px'}}/></button>
+        <button><img src={"./img/google.png"} style={{width:'35px' , height:'35px'}}/></button>
+        </div>
+        <div className="col-md-3">
+        <button><img src={"./img/google.png"} style={{width:'35px' , height:'35px'}}/></button>
+        <button><img src={"./img/google.png"} style={{width:'35px' , height:'35px'}}/></button>
+        <button><img src={"./img/google.png"} style={{width:'35px' , height:'35px'}}/></button>
+        </div>
+      </Modal>
       </MainContainer>
     </>
   );
