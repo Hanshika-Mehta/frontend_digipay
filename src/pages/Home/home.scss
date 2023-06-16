@@ -1,5 +1,9 @@
 @import "../../mixins.scss";
 
+body {
+    background-color: #d4f3e7;
+  }
+
 .banner {
     padding: 40px 0;
     width: 100%;
@@ -182,6 +186,7 @@
         }
         p {
             color:#5d5f5e;
+            cursor: pointer;
         }
     }
 

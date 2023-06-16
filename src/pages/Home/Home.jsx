@@ -8,17 +8,22 @@ import {
     FaTwitter
 } from "react-icons/fa";
 import FooterImage from "../../assets/c1.jpg"
+import Navbar from '../../components/Navbar/Navbar';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
         <>
+            <Navbar />
             <div className="banner">
                 <div className="content">
                     <div className="text-content">
                         <h4>Digi Pay</h4>
                         <h1>Experience <br /> hassle-free Transaction</h1>
                         <p>Experience simple, secure, and stress-free Transaction. Say goodbye to long queues and complex procedures and hello to hassle-free payments with Digi Pay</p>
-                        <button className="cta">Register</button>
+                        <Link to="/register">
+                            <button className="cta">Register</button>
+                        </Link>
                     </div>
                     <img src={BannerImg} alt="" className="bannerImg" />
                 </div>
