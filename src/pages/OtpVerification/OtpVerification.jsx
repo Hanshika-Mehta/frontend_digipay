@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 
 const OtpVerification = () => {
     const [otp, setOtp] = useState(['', '', '', '', '', '']);
+    
+
 
     const handleOtpChange = (event, index) => {
         const value = event.target.value.replace(/\D/g, '');
@@ -42,7 +44,7 @@ const OtpVerification = () => {
                 <Link to="/dashboard">
                     <button className="otpButton">Verify</button>
                 </Link>
-                <Link>
+                <Link >
                     <button className="otpButton">Resend OTP</button>
                 </Link>
             </div>
@@ -50,4 +52,4 @@ const OtpVerification = () => {
     )
 }
 
-export default OtpVerification
+export default OtpVerification;

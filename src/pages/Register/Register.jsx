@@ -33,7 +33,7 @@ const Register = () => {
                     <input
                         className="inputBox"
                         type="text"
-                        name="name"
+                        name="phonenumber"
                         // onChange={(e) => setName(e.target.value)}
                         // id="name"
                         placeholder="Phone Number"
@@ -42,7 +42,7 @@ const Register = () => {
                     <input
                         className="inputBox"
                         type="text"
-                        name="name"
+                        name="password"
                         // onChange={(e) => setName(e.target.value)}
                         // id="name"
                         placeholder="Password"
