@@ -15,8 +15,8 @@
 
     .modalContainer {
         position: fixed;
-        // max-width: 30rem;
-        width: 30%;
+        max-width: 30rem;
+        width: 70%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -60,8 +60,9 @@
     
         .modalOtpContainer {
             display: flex;
-            justify-content: center;
+            justify-content: left;
             align-items: center;
+            margin-top: 20px;
     
             button {
                 width: 100%;

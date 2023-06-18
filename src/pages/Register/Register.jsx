@@ -2,9 +2,21 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import "./register.scss";
 import Logo from "../../assets/logo1.png";
+import DetailsModal from '../../modals/detailsModal/DetailsModal';
 
 const Register = () => {
     const [isChecked, setIsChecked] = useState(false);
+
+    const [showDetailsModal, setShowDetailsModal] = useState(false);
+
+    const openDetailsModal = () => {
+        setShowDetailsModal(true);
+        // document.querySelector('.registration-page').classList.add('blur');
+    };
+
+    const closeDetailsModal = () => {
+        setShowDetailsModal(false);
+    };
 
     const handleCheckboxChange = (event) => {
         setIsChecked(event.target.checked);
@@ -59,9 +71,12 @@ const Register = () => {
                         </label>
                     </div>
 
-                    <Link to="/otpverification">
-                        <button className="registerButton">Register</button>
-                    </Link>
+                        <div className={`registerButton ${showDetailsModal}`}>
+                            <button onClick={openDetailsModal}>Register</button>
+                            {showDetailsModal && <DetailsModal closeModal={closeDetailsModal} />}
+                        </div>
+                        
+
                     <Link to="/login">
                         <h3>Already have an account? Login</h3>
                     </Link>
@@ -71,5 +86,5 @@ const Register = () => {
     )
 }
 
-export default Register
+export default Register;
 

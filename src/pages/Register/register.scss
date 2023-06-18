@@ -2,7 +2,7 @@
 
 body {
     background-color: #d4f3e7;
-  }
+}
 
 .register {
     display: flex;
@@ -10,6 +10,12 @@ body {
     justify-content: space-between;
     width: 100%;
     height: 100%;
+
+    // .blur {
+    //     filter: blur(4px)
+    // }
+
+
     // background-image: url("D:\Course Materials\ReactJS\Projects\digipay\src\assets\background.jpg");
     // margin-top: 35px;
 
@@ -22,6 +28,7 @@ body {
         // margin-top: -90px;
         width: 50%;
         max-width: 500px;
+
         img {
             width: 150px;
             height: 110px;
@@ -62,20 +69,25 @@ body {
         @media only screen and (max-width: 320px) {
             width: 80vw;
             height: 90vh;
+
             hr {
                 margin-bottom: 0.3rem;
             }
+
             h4 {
                 font-size: small;
             }
         }
+
         @media only screen and (min-width: 360px) {
             width: 80vw;
             height: 90vh;
+
             h4 {
                 font-size: small;
             }
         }
+
         @media only screen and (min-width: 411px) {
             width: 80vw;
             height: 90vh;
@@ -85,10 +97,12 @@ body {
             width: 80vw;
             height: 80vh;
         }
+
         @media only screen and (min-width: 1024px) {
             width: 70vw;
             height: 50vh;
         }
+
         @media only screen and (min-width: 1280px) {
             width: 30vw;
             height: 80vh;
@@ -110,7 +124,7 @@ body {
             padding-left: 20px;
 
             &:focus {
-                border: 2px solid #33B786 ;
+                border: 2px solid #33B786;
                 outline: none;
             }
         }
@@ -139,19 +153,29 @@ body {
         }
 
         .registerButton {
-            text-transform: uppercase;
-            height: 15%;
-            width: 65%;
-            border-radius: 30px;
-            border-style: none;
-            background-color: rgb(51, 183, 134);
-            color: white;
-            font-size: 16px;
-            letter-spacing: 3px;
-            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // filter: blur(4px);
+            // height: 100%;
 
-            &:hover {
-                opacity: 0.9;
+
+            button {
+                text-transform: uppercase;
+                // height: 100%;
+                width: 65%;
+                border-radius: 30px;
+                border-style: none;
+                background-color: rgb(51, 183, 134);
+                color: white;
+                font-size: 16px;
+                letter-spacing: 3px;
+                cursor: pointer;
+                padding: 15px;
+
+                &:hover {
+                    opacity: 0.9;
+                }
             }
         }
 
@@ -164,3 +188,7 @@ body {
         }
     }
 }
+
+// .blur {
+//     filter: blur(4px)
+// }
