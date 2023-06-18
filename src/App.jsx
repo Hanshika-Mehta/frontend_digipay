@@ -14,6 +14,9 @@ import VoucherID from './pages/VoucherID/VoucherID';
 import Profile from './pages/Profile/Profile';
 import Merchant from './pages/Merchant/Merchant';
 import Promotion from './pages/Promotions/Promotion';
+import CompanyRegister from './pages/CompanyProfile/companyRegister/CompanyRegister';
+import CompanyLogin from './pages/CompanyProfile/companyLogin/CompanyLogin';
+import CompanyDashboard from './pages/CompanyProfile/companyDashboard/CompanyDashboard';
 // import OTPModal from './models/otpModel/OTPModal';
 
 function App() {
@@ -34,6 +37,9 @@ function App() {
                 <Route path="/promotions" element={<Promotion />} />
                 <Route path="/transaction" element={<Transaction />} />
                 <Route path="/merchant" element={<Merchant />} />
+                <Route path="/company-register" element={<CompanyRegister />} />
+                <Route path="/company-login" element={<CompanyLogin />} />
+                <Route path="/company-dashboard" element={<CompanyDashboard/>} />
                 {/* <Route path="/enterOTP" element={<OTPModal />} /> */}
 
 
