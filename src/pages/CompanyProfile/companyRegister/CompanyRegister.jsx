@@ -95,7 +95,7 @@ const CompanyRegister = () => {
                             {/* {showDetailsModal && <DetailsModal closeModal={closeDetailsModal} />} */}
                         
 
-                    <Link to="/login">
+                    <Link to="/company-login">
                         <h3>Already have an account? Login</h3>
                     </Link>
                 </div>

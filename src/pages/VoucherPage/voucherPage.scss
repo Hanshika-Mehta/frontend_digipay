@@ -25,7 +25,6 @@
             margin-right: 30px;
             margin-top: 20px;
             padding: 20px;
-            
 
             .voucherColumn1 {
                 display: flex;
@@ -34,12 +33,14 @@
                 margin-top: 20px;
                 border-bottom: 5px solid #e5e5e5;
                 padding-bottom: 40px;
+
                 img {
                     width: 170px;
                     height: 100px;
                     cursor: pointer;
                 }
             }
+
             .voucherColumn2 {
                 display: flex;
                 align-items: center;
@@ -47,6 +48,7 @@
                 margin-top: 40px;
                 border-bottom: 5px solid #e5e5e5;
                 padding-bottom: 40px;
+
                 img {
                     width: 170px;
                     height: 100px;
@@ -59,22 +61,22 @@
         width: 33%;
         height: 100%;
         margin-right: 30px;
-    
+
         .rightUpper {
             display: flex;
             align-items: center;
             justify-content: space-between;
-    
+
             .rightUpperOld {
                 display: flex;
                 align-items: center;
                 margin-left: 50px;
             }
-    
+
             .rightUpperNew {
                 display: flex;
                 align-items: center;
-    
+
                 .profilePic {
                     width: 40px;
                     height: 40px;
@@ -82,10 +84,10 @@
                 }
             }
         }
-    
+
         .rightLower {
             // width: 100%;
-    
+
             .lastHeading {
                 display: flex;
                 align-items: center;
@@ -93,11 +95,11 @@
                 margin-left: 50px;
                 margin-top: 50px;
             }
-    
+
             .transactions {
                 margin-top: 20px;
                 margin-left: 50px;
-    
+
                 .details {
                     display: flex;
                     align-items: center;
@@ -110,6 +112,4 @@
             }
         }
     }
-    
-
 }
