@@ -1,7 +1,8 @@
 @import "../../mixins.scss";
 
 body {
-    background-color: #d4f3e7;
+    background-image: url("../../assets/background.jpg");
+    background-size: cover;
 }
 
 .register {

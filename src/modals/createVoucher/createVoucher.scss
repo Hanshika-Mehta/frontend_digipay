@@ -1,0 +1,59 @@
+.createVoucherContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(189, 189, 189, 0.9);
+    z-index: 999;
+    box-sizing: border-box;
+   
+
+    .createVoucherWrapper {
+        position: fixed;
+        max-width: 30rem;
+        height: 100%;
+        width: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 100px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: white;
+
+        .voucherHeading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .information {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+
+            .amount {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                // .input {
+
+                // }
+            }
+
+            .purpose {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+}

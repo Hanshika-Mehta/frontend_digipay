@@ -1,8 +1,9 @@
 @import "../../mixins.scss";
 
 body {
-    background-color: #d4f3e7;
-  }
+    background-image: url("../../assets/background.jpg");
+    background-size: cover;
+}
 
 .banner {
     padding: 40px 0;

@@ -1,8 +1,9 @@
 @import "../../mixins.scss";
 
-// body {
-//   background-color: #d4f3e7;
-// }
+body {
+    background-image: url("../../assets/background.jpg");
+    background-size: cover;
+}
 .otp {
     display: flex;
     align-items: center;

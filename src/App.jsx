@@ -1,8 +1,5 @@
-// import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 import './App.css'
-// import Navbar from './components/Navbar/Navbar';
 import Home from "./pages/Home/Home";
 import Register from "./pages/Register/Register";
 import OtpVerification from './pages/OtpVerification/OtpVerification';
@@ -17,6 +14,8 @@ import Promotion from './pages/Promotions/Promotion';
 import CompanyRegister from './pages/CompanyProfile/companyRegister/CompanyRegister';
 import CompanyLogin from './pages/CompanyProfile/companyLogin/CompanyLogin';
 import CompanyDashboard from './pages/CompanyProfile/companyDashboard/CompanyDashboard';
+import Reward from './pages/Rewards/Reward';
+import GovernmentDashboard from './pages/governmentDashboard/GovernmentDashboard';
 // import OTPModal from './models/otpModel/OTPModal';
 
 function App() {
@@ -39,7 +38,9 @@ function App() {
                 <Route path="/merchant" element={<Merchant />} />
                 <Route path="/company-register" element={<CompanyRegister />} />
                 <Route path="/company-login" element={<CompanyLogin />} />
-                <Route path="/company-dashboard" element={<CompanyDashboard/>} />
+                <Route path="/company-dashboard" element={<CompanyDashboard />} />
+                <Route path="/government-dashboard" element={<GovernmentDashboard/>} />
+                <Route path="/rewards" element={<Reward />} />
                 {/* <Route path="/enterOTP" element={<OTPModal />} /> */}
 
 
