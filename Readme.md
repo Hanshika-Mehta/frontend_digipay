@@ -75,6 +75,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 1. POST User: signup `localhost:3000/api/v1/users/signup`
 
-screenshot
 
-2. 
+
+2. POST User: signIn `localhost:3000/api/v1/users/signin`
+3. PATCH User: Set pincode `localhost:3000/api/v1/users/pincode`
+4. GET User: Check pincode `localhost:3000/api/v1/users/pincode`
+5. GET User: Get User details `localhost:3000/api/v1/users`
+6. POST User: create issuer bank `localhost:3000/api/v1/iabanks`
+7. PATCH User: Resend voucher `localhost:3000/api/v1/vouchers`
+8. GET User: Get voucher `localhost:3000/api/v1/vouchers`
+9. GET User: Get voucher Cop `localhost:3000/api/v1/vouchers`
+10. POST Merchant: Signup `localhost:3000/api/v1/merchants`
+11. POST Merchant: SignIn `localhost:3000/api/v1/merchants/signin`
+12. POST Merchant: create acquirer bank `localhost:3000/api/v1/merchants/addBank`
+13. GET Merchant: Request OTP `localhost:3000/api/v1/merchants/requestOTP`
+14. POST Merchant: Accept Payment `localhost:3000/api/v1/merchants/acceptPayment`
+15. POST User: Request a voucher `User: localhost:3000/api/v1/vouchers`
+  
+   
