@@ -94,26 +94,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 6. PATCH User: Resend voucher `localhost:3000/api/v1/vouchers`
 ![image](https://github.com/Hanshika-Mehta/frontend_digipay/assets/65864642/971f1459-9d37-484a-94fa-eaa63bb5d484)
 
-7. GET User: Get voucher `localhost:3000/api/v1/vouchers`
+7. POST User: Request a voucher `User: localhost:3000/api/v1/vouchers`
+
+9. GET User: Get voucher `localhost:3000/api/v1/vouchers`
 ![image](https://github.com/Hanshika-Mehta/frontend_digipay/assets/65864642/3c1d5c82-671c-468d-8bfc-d7802b1fafde)
 
-8. GET User: Get voucher Cop `localhost:3000/api/v1/vouchers`
+10. GET User: Get voucher Cop `localhost:3000/api/v1/vouchers`
 ![image](https://github.com/Hanshika-Mehta/frontend_digipay/assets/65864642/e4c53bb7-acaf-42ad-a601-3126fc9b7fff)
 
-9. POST Merchant: Signup `localhost:3000/api/v1/merchants`
-![image](https://github.com/Hanshika-Mehta/frontend_digipay/assets/65864642/d6c68fc2-dd70-42e3-a066-2073c1e6721c)
+11. POST Merchant: Signup `localhost:3000/api/v1/merchants`
 
-10. POST Merchant: SignIn `localhost:3000/api/v1/merchants/signin`
-![image](https://github.com/Hanshika-Mehta/frontend_digipay/assets/65864642/e4e3bd02-da52-45bf-94a3-7dd2f545ce1c)
 
-11. POST Merchant: create acquirer bank `localhost:3000/api/v1/merchants/addBank`
-![image](https://github.com/Hanshika-Mehta/frontend_digipay/assets/65864642/52696b65-7849-4e0d-9d02-e99babf06b28)
+12. POST Merchant: SignIn `localhost:3000/api/v1/merchants/signin`
 
-12. GET Merchant: Request OTP `localhost:3000/api/v1/merchants/requestOTP`
-![image](https://github.com/Hanshika-Mehta/frontend_digipay/assets/65864642/756140bb-823f-455f-a499-848937c1860b)
 
-13. POST Merchant: Accept Payment `localhost:3000/api/v1/merchants/acceptPayment`
+13. POST Merchant: create acquirer bank `localhost:3000/api/v1/merchants/addBank`
 
-14. POST User: Request a voucher `User: localhost:3000/api/v1/vouchers`
+
+14. GET Merchant: Request OTP `localhost:3000/api/v1/merchants/requestOTP`
+
+
+15. POST Merchant: Accept Payment `localhost:3000/api/v1/merchants/acceptPayment`
+
+
   
    
