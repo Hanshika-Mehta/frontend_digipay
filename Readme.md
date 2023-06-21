@@ -92,29 +92,42 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 6. PATCH User: Resend voucher `localhost:3000/api/v1/vouchers`
-![image](https://github.com/Hanshika-Mehta/frontend_digipay/assets/65864642/971f1459-9d37-484a-94fa-eaa63bb5d484)
+![image](https://github.com/Hanshika-Mehta/frontend_digipay/assets/65864642/ccddbe29-6cf1-4c09-bc62-34e7f0f26313)
+
 
 7. POST User: Request a voucher `User: localhost:3000/api/v1/vouchers`
+![image](https://github.com/Hanshika-Mehta/frontend_digipay/assets/65864642/229bfb00-b34b-43cd-8904-c3833cd9f1b8)
 
-9. GET User: Get voucher `localhost:3000/api/v1/vouchers`
-![image](https://github.com/Hanshika-Mehta/frontend_digipay/assets/65864642/3c1d5c82-671c-468d-8bfc-d7802b1fafde)
-
-10. GET User: Get voucher Cop `localhost:3000/api/v1/vouchers`
-![image](https://github.com/Hanshika-Mehta/frontend_digipay/assets/65864642/e4c53bb7-acaf-42ad-a601-3126fc9b7fff)
-
-11. POST Merchant: Signup `localhost:3000/api/v1/merchants`
+8. GET User: Get voucher `localhost:3000/api/v1/vouchers`
 
 
-12. POST Merchant: SignIn `localhost:3000/api/v1/merchants/signin`
+![image](https://github.com/Hanshika-Mehta/frontend_digipay/assets/65864642/5816d258-972d-433f-a057-35e8adfcf37a)
+
+9. GET User: Get voucher Cop `localhost:3000/api/v1/vouchers`
 
 
-13. POST Merchant: create acquirer bank `localhost:3000/api/v1/merchants/addBank`
+![image](https://github.com/Hanshika-Mehta/frontend_digipay/assets/65864642/811c04bc-f4ca-41a2-a61c-8d9004c86074)
+
+10. POST Merchant: Signup `localhost:3000/api/v1/merchants`
 
 
-14. GET Merchant: Request OTP `localhost:3000/api/v1/merchants/requestOTP`
+11. POST Merchant: SignIn `localhost:3000/api/v1/merchants/signin`
+
+![image](https://github.com/Hanshika-Mehta/frontend_digipay/assets/65864642/7afe9044-abc3-44a7-a5ab-014878329695)
+
+12. POST Merchant: create acquirer bank `localhost:3000/api/v1/merchants/addBank`
+
+![image](https://github.com/Hanshika-Mehta/frontend_digipay/assets/65864642/ad50e4d5-3a74-4c8d-8928-ac51b1866d37)
 
 
-15. POST Merchant: Accept Payment `localhost:3000/api/v1/merchants/acceptPayment`
+13. GET Merchant: Request OTP `localhost:3000/api/v1/merchants/requestOTP`
+
+![image](https://github.com/Hanshika-Mehta/frontend_digipay/assets/65864642/35b24443-0215-4f0f-a107-227c0327c70c)
+
+
+14. POST Merchant: Accept Payment `localhost:3000/api/v1/merchants/acceptPayment`
+
+![image](https://github.com/Hanshika-Mehta/frontend_digipay/assets/65864642/8544e1a5-c06c-450b-aad5-1182070827f5)
 
 
   
