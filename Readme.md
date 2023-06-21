@@ -68,3 +68,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Digipay:E-Rupi Ecosystem. Payment Solution
+## Node.js API's
+
+1. POST User: signup `localhost:3000/api/v1/users/signup`
+
+screenshot
+
+2. 
