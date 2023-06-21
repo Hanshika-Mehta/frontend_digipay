@@ -75,6 +75,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 1. POST User: signup `localhost:3000/api/v1/users/signup`
 
+![image](https://github.com/Hanshika-Mehta/frontend_digipay/assets/65864642/e32deb82-faac-4522-b015-8195c8d1d558)
 
 
 2. POST User: signIn `localhost:3000/api/v1/users/signin`
